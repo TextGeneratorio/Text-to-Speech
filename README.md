@@ -1,7 +1,5 @@
-# subtitle-generator
-Generate subtitles for youtube videos for free with https://text-generator.io
-
-
+# speech generator
+Generate speech in a wav file from text, for free with https://text-generator.io
 
 # Setup
 
@@ -12,7 +10,7 @@ git clone git@github.com:TextGeneratorio/subtitle-generator.git
 cd subtitle-generator
 ```
 
-install dependencies
+Install dependencies
 
 ```bash
 virtualenv .env
@@ -20,9 +18,19 @@ source .env/bin/activate
 pip install -r requirements.txt
 ```
 
-
-usage
+Usage
 
 ```bash
-TEXT_GENERATOR_API_KEY=YOUR_API_KEY_HERE python subtitle_generator.py --video_url "https://www.youtube.com/watch?v=uJgzCQYVv44&ab_channel=LeviTheGiant" --output_file output.srt
+TEXT_GENERATOR_API_KEY=YOUR_API_KEY_HERE python speech_generator.py \
+  --text "Hello world" \
+  --output_file output.wav
 ```
+
+
+### Key words
+
+text to speech API
+
+AI Text Generation
+
+speech to text API
